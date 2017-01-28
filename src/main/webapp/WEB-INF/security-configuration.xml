@@ -8,7 +8,7 @@
     <http auto-config="true">
         <intercept-url pattern="/login*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
         <access-denied-handler error-page="/403" />
-        <intercept-url pattern="/ConfirmationOfRegistration" access="ROLE_ANONYMOUS"/>
+        <intercept-url pattern="/admin-page" access="ROLE_ADMIN"/>
         <!--UserController-->
         <intercept-url pattern="/putPhoto" access="ROLE_USER"/>
 
