@@ -11,10 +11,9 @@ import javax.servlet.http.HttpServletRequest;
  */
 
 @Controller
-@RequestMapping("/hello")
 public class UserController {
 
-    @RequestMapping( method = RequestMethod.GET)
+    @RequestMapping(value = "/our-works", method = RequestMethod.GET)
     public ModelAndView getLostPassword(HttpServletRequest request) {
 
             return new ModelAndView("our-works");
